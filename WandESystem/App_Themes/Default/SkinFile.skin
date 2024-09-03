@@ -1,0 +1,23 @@
+﻿
+<asp:GridView GridLines="none" CssClass="grid"  AutoGenerateColumns="false" AllowPaging="true"  EmptyDataText="There are no records found." Width="980px" AllowSorting="true"
+    CellPadding="0" CellSpacing="1" runat="server" SkinId="GridView"  PageSize="10"   >
+    <HeaderStyle  HorizontalAlign ="center" VerticalAlign="Middle"  />
+    <RowStyle CssClass="row1" Height="20" BorderColor="#cfcfcf" HorizontalAlign="Center" VerticalAlign="Middle" /> 
+    <AlternatingRowStyle CssClass="row2" Height="20"  HorizontalAlign="Center" VerticalAlign="Middle" />
+    <PagerStyle CssClass="paging" HorizontalAlign="right"  />    
+</asp:GridView>
+<asp:GridView GridLines="none" CssClass="grid"  AutoGenerateColumns="false" AllowPaging="false"  Width="980px"  EmptyDataText="There are no records found."
+    CellPadding="0" CellSpacing="1" runat="server" SkinId="ReportGridView" >
+    <HeaderStyle  HorizontalAlign ="center" VerticalAlign="Middle"/>
+    <RowStyle CssClass="row1" Height="20" BorderColor="#cfcfcf"  HorizontalAlign="Center" VerticalAlign="Middle" /> 
+    <AlternatingRowStyle CssClass="row2" Height="20" HorizontalAlign="Center" VerticalAlign="Middle" />    
+</asp:GridView>
+<asp:GridView GridLines="none" CssClass="grid"  AutoGenerateColumns="false" AllowPaging="false"  Width="980px" 
+    CellPadding="0" CellSpacing="1" runat="server" SkinId="TechnologyReportGridView" >
+    <HeaderStyle HorizontalAlign ="center" VerticalAlign="Middle"/>
+    <RowStyle CssClass="row1" Height="20" BorderColor="#cfcfcf" HorizontalAlign="Center" VerticalAlign="Middle" /> 
+    <AlternatingRowStyle CssClass="row2" Height="20" HorizontalAlign="Center" VerticalAlign="Middle" />    
+</asp:GridView>
+<asp:button runat="server" SkinId="btnLarge" CssClass="inputbutton btn_large" />
+<asp:button runat="server" SkinId="btnMedium" CssClass="inputbutton btn_medium" />
+<asp:button runat="server" CssClass="inputbutton btn_small" />
