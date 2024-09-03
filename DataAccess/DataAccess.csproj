@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ACC1476-A367-4E3A-B891-12AA87F69848}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refdll\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refdll\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51205.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refdll\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refdll\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\refdll\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\refdll\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\refdll\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\refdll\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\refdll\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AssetType.Base.cs" />
+    <Compile Include="Base\ElectricUnitPrice.Base.cs" />
+    <Compile Include="Base\Electric_Scale.Base.cs" />
+    <Compile Include="Base\Employee.Base.cs" />
+    <Compile Include="Base\Employee_House.Base.cs" />
+    <Compile Include="Base\House.Base.cs" />
+    <Compile Include="Base\HouseType.Base.cs" />
+    <Compile Include="Base\House_Teriff.Base.cs" />
+    <Compile Include="Base\Invoice.Base.cs" />
+    <Compile Include="Base\Invoice_Detail.Base.cs" />
+    <Compile Include="Base\Landfill.Base.cs" />
+    <Compile Include="Base\PageMaster.Base.cs" />
+    <Compile Include="Base\PageRole.Base.cs" />
+    <Compile Include="Base\Payroll_Submission.Base.cs" />
+    <Compile Include="Base\Period_Month.Base.cs" />
+    <Compile Include="Base\Role.Base.cs" />
+    <Compile Include="Base\Extra_Token_Detail.Base.cs" />
+    <Compile Include="Base\Teriff.Base.cs" />
+    <Compile Include="Base\Teriff_Rate.Base.cs" />
+    <Compile Include="Base\Token_Detail.Base.cs" />
+    <Compile Include="Base\Token_Period.Base.cs" />
+    <Compile Include="Base\Token_Request_Detail.Base.cs" />
+    <Compile Include="Base\Token_Sheet.Base.cs" />
+    <Compile Include="Base\User.Base.cs" />
+    <Compile Include="Base\WaterRate_Limit.Base.cs" />
+    <Compile Include="Base\Water_Scale.Base.cs" />
+    <Compile Include="Extended\AssetType.Extended.cs" />
+    <Compile Include="Extended\ElectricUnitPrice.Extended.cs" />
+    <Compile Include="Extended\Electric_Scale.Extended.cs" />
+    <Compile Include="Extended\Employee.Extended.cs" />
+    <Compile Include="Extended\Employee_House.Extended.cs" />
+    <Compile Include="Extended\House.Extended.cs" />
+    <Compile Include="Extended\HouseType.Extended.cs" />
+    <Compile Include="Extended\House_Teriff.Extended.cs" />
+    <Compile Include="Extended\Invoice.Extended.cs" />
+    <Compile Include="Extended\Invoice_Detail.Extended.cs" />
+    <Compile Include="Extended\Landfill.Extended.cs" />
+    <Compile Include="Extended\PageMaster.Extended.cs" />
+    <Compile Include="Extended\PageRole.Extended.cs" />
+    <Compile Include="Extended\Payroll_Submission.Extended.cs" />
+    <Compile Include="Extended\Period_Month.Extended.cs" />
+    <Compile Include="Extended\Role.Extended.cs" />
+    <Compile Include="Extended\Extra_Token_Detail.Extended.cs" />
+    <Compile Include="Extended\Teriff.Extended.cs" />
+    <Compile Include="Extended\Teriff_Rate.Extended.cs" />
+    <Compile Include="Extended\Token_Detail.Extended.cs" />
+    <Compile Include="Extended\Token_Period.Extended.cs" />
+    <Compile Include="Extended\Token_Request_Detail.Extended.cs" />
+    <Compile Include="Extended\Token_Sheet.Extended.cs" />
+    <Compile Include="Extended\User.Extended.cs" />
+    <Compile Include="Extended\WaterRate_Limit.Extended.cs" />
+    <Compile Include="Extended\Water_Scale.Extended.cs" />
+    <Compile Include="General\clsReport.cs" />
+    <Compile Include="General\ConvertTo.cs" />
+    <Compile Include="General\General.cs" />
+    <Compile Include="General\SystemEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

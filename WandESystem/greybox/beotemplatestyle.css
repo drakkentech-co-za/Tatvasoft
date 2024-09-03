@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0px;padding:0px;}
+img{border:0px;}
+body{font-size:12px;color:#000;font-family:Arial,Helvetica,sans-serif;}
+.star{color:red;}
+.outerdiv{width:976px;margin:30px auto 0px;}
+
+/* main Part*/
+h1{color:#981558;font-size:22px;font-weight:bold;margin-bottom:10px;}
+.gap{margin:10px 0px;}
+.gap img{margin:0px 3px;}
+.maintable{width:100%;border:collapse:collapse;border-spacing:0px;border:1px #c3c3c3 solid;border-top:none;margin-bottom:30px;}
+.maintable .thbg{background:#d9b8c9;font-size:16px;}
+.maintable .thinnerbg{background:#f1e1ea;font-size:12px;}
+table.maintable td, table.maintable th{margin:0px;padding:2px 5px;text-align:left;border-top:1px #c3c3c3 solid;}
+table.maintable table{width:100%;border:collapse:collapse;border-spacing:0px;border:none;}
+table.maintable table td, table.maintable table th{border:none;}
+table.maintable input[type="text"]{width:130px;}
+table.maintable select{width:110px;}
+.bohd{font-size:14px;color:#000;font-weight:bold;margin:10px 0px;padding-left:5px;}
+.spnrig{display:inline-block;margin-right:50px;}
+input.inputbox{margin-top:3px;margin-left:5px;}
+*+html input.inputbox{margin-top:0px;}
+
+.innertab{width:100%;border:collapse:collapse;border-spacing:0px;border:1px #c3c3c3 solid !important;border-top:none !important;}
+.innertab th{background:#f1e1ea;font-size:12px;}
+table.innertab td, table.innertab th{margin:0px;padding:2px 5px;text-align:left;border-top:1px #c3c3c3 solid !important;}
+
+/*------------ start popup ---------------*/
+.close-1{background:url(../images/close.png) left top;width:24px;height:24px;display:block;right:-6px;top:-8px;position:absolute;}
+.top-leftbg{background:url(../images/popup-righttopbg.png) right}
+.popup-box .left-top{background:url(../images/popup-lefttop.png) no-repeat;width:11px;height:9px;}
+.popup-box .right-top{background:url(../images/popup-righttopbg.png) no-repeat;width:11px;height:9px;}
+.popup-box .top-bg{background:url(../images/popup-top.png) repeat-x;height:9px;}
+.popup-box .left-bg{background:url(../images/popup-leftbg.png) repeat-y;width:11px;}
+.popup-box .right-bg{background:url(../images/popup-rightbg.png) repeat-y;width:11px;}
+.popup-box .left-bottom{background:url(../images/popup-bottomleft.png) no-repeat;width:11px;height:10px;}
+.popup-box .right-bottom{background:url(../images/popup-bottomright.png) no-repeat;width:11px;height:10px;}
+.popup-box .bottom-bg{background:url(../images/popup-bottom.png) repeat-x;height:10px;}
+.popup-inner-content{background:#fff;padding:12px 14px 12px 9px;}
+img.logo
+{margin:0 auto;display:block;}
+tr.header td div
+{ clear:both;}
+.phonefax b
+{ padding-left:5px;}
+.cmpnyname
+{font-size:20px;font-weight:bold;}
+tr.header td
+{ line-height:20px;}
+.chkrqd
+{ width:175px; float:left;}
+.chkrqd input
+{ float:right;}
+div.gap a
+{float:right;}
+input.reset
+{border:0;background:url(../gifs/btn-reset.png) no-repeat;width:67px;height:20px;float:right; cursor:pointer;}
+
+.tablebor{border:2px #000 solid;margin-bottom:20px;}
+.tablebor td{border:2px #000 solid;border-width:0 2px 2px 0;padding:5px;text-align:center;}
+.tablebor td table{border:none !important;}
+.tablebor td table td{border:none !important;}
+.tabbor{border:2px #000 solid;font-size:12px;margin-bottom:20px;}
+.tabbor td, .tabbor th{border:1px #000 solid;padding:5px;vertical-align:top;}
+.beono, .beo-no{font-size:22px;font-weight:bold;}
+.beotitl{font-size:18px;font-weight:bold;}
+.beostatus{font-size:22px;}
+.tabdoub{border:2px #000 solid;border-right:0; margin-bottom:20px;}
+.tabdoub td{border:2px #000 solid;border-width:0 2px 0 0;padding:5px 0px;font-size:16px;vertical-align:top;text-align:center;}
+.double{border-top:3px #000 double;border-bottom:3px #000 double;padding:0px 5px; margin-bottom:20px;font-weight:bold;}
+.gaptobo{margin:10px 0px;display:inline-block;}
+.bortop{border-top:2px #000 solid;}
+.marbot{margin:2px 0px 10px;height:15px;text-align:right;}
+.eventdate{font-weight:bold;background:#eeeeee;border-bottom:2px solid #000;}
+.tablebor p {width:100%;display:block;clear:both;text-align:left;padding-bottom:4px;}
+.tablebor p b { width:30%;float:left;text-align:right; padding:0 5% 0 0;}
+.footertext {margin:15px 0 25px;border-top:1px solid #000;padding-top:3px;}

@@ -1,0 +1,11 @@
+# Build directories
+/WandESystem/bin/
+/WandESMSService/bin/
+/TokenRequestService/bin/
+/TestTokenRequestService/bin/
+/DataAccess/bin/
+/WandESMSService/obj/
+/TokenRequestService/obj/
+/TestTokenRequestService/obj/
+/DataAccess/obj/
+/out/

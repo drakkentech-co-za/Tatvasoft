@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/UserControls/Header.ascx" TagName="ucHeader" TagPrefix="ucHeader" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagName="ucFooter" TagPrefix="ucFooter" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />    
+    <title>W & E System</title>
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.10.2.js" type="text/javascript"></script>
+    <script src="Scripts/CommonFun.js?23oct2013" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="height: 100%">
+    <asp:ScriptManager runat="server">
+    </asp:ScriptManager>
+    <div id="main" class="mainbg">
+        <div id="wrapper">
+            <!--main area start-->
+            <ucHeader:ucHeader ID="header" runat="server" />
+            <div id="middle">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--main area end-->
+        </div>
+        <ucFooter:ucFooter ID="footer" runat="server" />
+    </div>
+    <asp:HiddenField ID="hdnHideCompare" runat="server" Value="1" />
+    </form>
+</body>
+</html>
